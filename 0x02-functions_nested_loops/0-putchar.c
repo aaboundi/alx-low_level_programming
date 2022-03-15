@@ -1,12 +1,20 @@
-#include <putchar.h>
+#include "main.h"
 
 /**
  * main - prints _putchar, followed by a new line
- * Return : Alway 0 (Success)
+ * Description : using the main function
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	_putchar('_putchar');
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 
 	return (0);
