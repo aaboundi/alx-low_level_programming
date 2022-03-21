@@ -4,11 +4,13 @@
  * puts2 - prints every other character of a string,
  * starting with the first character, followed by a new line
  * @str: string to print
- * Description : using the _puts function
+ * Description : using the puts2 function
  */
 void puts2(char *str)
 {
 	int i, len;
+
+	len = 0;
 
 	while (str[len] != '\0')
 	{
