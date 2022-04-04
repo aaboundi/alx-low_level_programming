@@ -11,18 +11,24 @@
 char *create_array(unsigned int size, char c)
 {
 	char *pointer;
-	unsigned int i;
+	unsigned int i = 0;
 
 	if (size == 0)
 		return (NULL);
-	pointer = malloc(sizeof(char) * size);
+
+	pointer = (char *) malloc(sizeof(char) * size);
 
 	if (pointer == NULL)
 		return (NULL);
-	else
+
+
+	while (i < size)
 	{
-		for (i = 0, i < size; i++)
-			pointer[i] = c;
-		return (pointer);
+		*(pointer + i) = c;
+		i++;
 	}
+
+	*(pointer + i) = '\0';
+
+	return (pointer);
 }
