@@ -55,7 +55,7 @@ int binary_search_index(int *array, size_t l, size_t r, int value)
  *
  * Return: The first index of the value in the array, otherwise -1.
  */
-int linear_search(int *array, size_t size, int value)
+int binary_search(int *array, size_t size, int value)
 {
 	return (binary_search_index(array, 0, size - 1, value));
 }
